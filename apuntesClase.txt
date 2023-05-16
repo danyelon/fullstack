@@ -1,0 +1,253 @@
+
+Hacer una subcarpeta para todas las imagenes que use
+
+Orden de las etiquetas:
+
+header -> nav -> main -> (section) -> footer
+
+-------------------------------------------------------------------
+nav:
+
+1 forma:
+
+lista (ul) con los items
+
+otra forma:
+
+<nav>
+	<a href="[aca va el link del home]">Home</a>
+	<a href="[aca va el link de la pag de contacto]">Contacto</a>
+
+
+</nav>
+--------------------------------------------------------------------
+
+Que el <a> te abra otra pestaña en lugar de sobre-escribirte la pagina:
+
+target="_blank"
+
+ej: <a href="link" target="_blank">
+
+--------------------------------------------------------------------
+
+Incrustar video externo:
+
+Voy a compartir (en un video), voy a insertar, copio la porcion de codigo y
+pego ese codigo en mi html
+
+--------------------------------------------------------------------
+
+Anañir una pagina de maps:
+
+entrar en google maps -> compartir -> insertar mapa -> copiar iframe -> pegar
+
+--------------------------------------------------------------------
+Opcion para poner un formulario en la pagina de contacto:
+
+<form action="LINK (EJ: mercado pago)">
+
+	<label for="nombre">Nombre</label>	(comunicar con que rellenar)
+						(for e id para identificar
+						el label)
+
+	<input type="text" id="nombre"> (deja escribir algo en una caja)
+					(text para saber que tipo de dato va a enviar)
+					(input siempre dentro de etiqueta form)
+
+<label for="">Apellido</label>
+	<input type="text"> 	(deja escribir algo en una caja)
+				(text para saber que tipo de dato va a enviar)
+				(input siempre dentro de etiqueta form)
+
+ 	<input type="submit"> (para boton de enviar)
+
+</form>
+
+----------------------
+
+informacion sensible: metodo post
+
+informacion no tan sensible: metodo get
+
+----------------------------------------
+
+id y class:
+
+No deberia haber mas de UN SOLO id con el mismo nombre
+
+-Si necesito identificar varias cosas con una misma etiqueta, uso class
+
+Etiquetas unicas:
+
+header, footer, h1 (usualmente),etc
+
+
+Practicar font-sizes, y tamaños en css
+
+--------------------------------------------------------------------------------
+
+EN CSS: 
+
+Llamar a clases: .<nombre clase> {}
+
+Llamar a ids: #<nombre id> {}
+
+.<nombre de la clase> {
+
+	width: 800( o 900); //medida estandar
+
+	margin-left: auto;	//
+	margin-right: auto; //para centrar elementos
+
+	border-width: 2px; //ancho del border
+	border-color: red;
+	border-style: solid; //te aparecen opciones por defecto (solid es el mas usado)
+
+	border: solid  2px red; //hace lo mismo que las anteriores 3 lineas de codigo
+
+	display: block;
+	display: inline; //A los elementos inline no puedo hacerles margin top / margin down, tampoco se les puede
+					 //agregar bordes a cosas con atributos inline
+
+	display: inline-block; // te permite trabajar con los margenes de arriba y abajo
+
+}
+
+Normalizar margenes:
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+--------------------------------------------------------------------------------
+
+.box1{						
+
+	margin-bottom: 30px;	//NO va a tomar este. Toma el de abajo. No los suma, toma el de mayor distancia.
+
+	position: absolute; //se mueve en relacion a su caja padre, sin importarle nada mas
+	position: relative; //se va moviendo a partir de su posicion original
+	left: 15px; //se mueve desde la izq a a derecha 15 ox
+}
+.box2{
+
+	margin-top: 50px;		//Va a tomar este. No los suma, toma el de mayor distancia.
+
+	box-sizing: border-box; //No se va a salir de los bordes que le da la caja
+}
+
+*{
+	box-sizing: border-box;
+}
+
+
+------------------------------------------------------------------------------------------
+
+FLEXBOX
+
+
+//aplicar la propiedad flexbox a la caja padre
+
+display: flex;
+
+justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
+
+flex-direction: row / column / row-reverse / column-reverse;
+
+align-items: flex-start | flex-end | center | baseline | stretch;
+
+align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+
+flex-wrap: nowrap | wrap | wrap-reverse;
+
+---------------------------------------------------------------------------------------------
+
+PSEUDO-clases
+
+h3:hover {
+
+	//lo que pasa cuando se pone el mouse encima
+
+}
+
+h3:active {
+
+	//lo que pasa cuando se hace click
+
+}
+
+---------------------------------------------------------------------------------------------
+
+-3 breakpoints es lo recomendable en media query
+
+@media (max-width: 400px) {
+
+	//lo que hara la pagina en una pantalla de 400px o menos
+
+}
+
+
+--------------------------------------------------------------------------------------------
+
+BOOTSTRAP
+
+
+Si ya tengo un proyecto y quiero implementar bootstrap:
+
+	-copiar la parte de css y la parte de js
+
+	-link de ref al css en el head, y el de js al final del body
+
+Si quiero aplicar bootstrap en un archivo nuevo desde cero:
+
+	-copiar y pegar el template de la pagina
+
+
+
+
+
+GRILLA DE 12 DIVISIONES, LA GRILLA DE BOOTSTRAP
+
+--------------------------------------------------------------------------------------
+
+FECHA ENTREGA TP INTEGRADOR FRONTEND: Domingo 14 de Mayo.
+
+--------------------------------------------------------------------------------------
+
+GIT Y GITHUB
+
+clear: me limpia la terminal
+
+pwd: me dice donde estoy
+
+ls: me da todos los directorios disponibles
+
+cd <nombre de la sub-carpeta>: me voy a esa carpeta subcarpeta que esta dentro de la carpeta donde estoy
+
+git config --global user.name "elias"
+
+git config --global user.email "eliasfcarrizo@gmail.com"
+
+git init: inicializar el repositorio
+
+cd .. : vuelve a un directorio atras
+
+-----------------------------------------
+
+commits tests:
+
+-primer version del txt,  primer commit
+
+
+-segunda version del txt apuntes, a ver si se actualiza
+----------------------------------------
+fdjkbgf
+------------------------------
+MI ARCHIVO PRINCIPAL DEBE IT CON EL NOMBRE index
+
+
+git pull //trae todos los cambios que una persona hizo en un projecto que clonaste
+
+-------------------------------------------------------------------------------------
+
