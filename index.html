@@ -1,49 +1,278 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap v5 - Alpha1</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-</head>
-<body>
-    
-    <style>
-        .my-custom-row {
-            background-color: bisque;
-            height: 400px;
-        }
-    </style>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab. de Artefactos Futuristas</title>
+    <link href="indexCSS.css" rel="stylesheet">
+    <!-- implementacion bootstrap para CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-2">Col One</div>
-            <div class="col-sm-1">Col Two</div>
-            <div class="col-sm-1">Col Two</div>
-            <div class="col-sm-1">Col Two</div>
-            <div class="col-sm-1">Col Two</div>
-            <div class="col-sm-1">Col Two</div>
-            <div class="col-sm-1">Col Two</div>
+    <header>
+        <!-- nav -->
+
+        <!-- INICIO NAV -->
+        <nav class="navPrincipal">
+
+            <div class="icono">
+                <img src="labBadge.png" alt="logo del laboratorio" width="45px" height="45px" id="logoLab">
+                <h5 class="titulo">Lab. de Artefactos Futuristas</h5>
+            </div>
+
+            <div class="links">
+                <ul class="nav justify-content-end" id="listaNav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" class="vaBlanco" style="color: white;">El Laboratorio</a>
+                    </li>
+                    <li class="nav-item" class="vaGris">
+                      <a class="nav-link active" aria-current="page" href="#" style="color: rgb(158, 157, 157);">Labmembs Actuales</a>
+                    </li>
+                    <li class="nav-item" class="vaGris">
+                      <a class="nav-link" href="#" style="color: rgb(158, 157, 157);">Lugar y horarios de atencion</a>
+                    </li>
+                    <li class="nav-item" class="vaGris">
+                      <a class="nav-link" href="#" style="color: rgb(158, 157, 157);">Conviertete en Labmemb</a>
+                    </li>
+                    <li class="nav-item" class="vaVerde">
+                      <a class="nav-link" href="#" style="color: green;">Solicitar un tour</a>
+                    </li>
+                </ul>  
+            </div> 
+
+        </nav>
+        <!-- FIN NAV -->
+    </header>
+
+    <main>
+        <!-- slide + cards labmembs fundadores + info akihabara (img + info) + form para postulacion a labmemb -->
+
+        <!-- Slide de todos los labmemb: -->
+        <div class="slide">
+          <!-- Imagenes del slide -->
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="okabe001Final.png" class="d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                 <img src="mayuri002Final.png" class="d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="daru003Final.png" class="d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="makise004Final.png" class="d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="moeka005Final.png" class="d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="ruka006.png" class="d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="ferys007Final.png" class="d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="suzuha008Final.png" class="d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="maho009Final.png" class="d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="kagari010Final.png" class="d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="yuki011Final.png" class="d-block" alt="...">
+                </div>
+            </div>
+          </div>
+
+          <!-- Texto y botones del slide -->
+          <div class="informativo">
+
+            <h5 id="tituloInformativo">Laboratorio De Artefactos Futuristas</h5>
+            <p>Fue fundado por Okabe Rintaro con el objetivo de inventar dispositivos futuristas únicos y extravagantes. El laboratorio cuenta con un grupo de miembros excéntricos, incluyendo a la amiga de la infancia de Okabe, Shiina Mayuri, y un experto hacker en informática, Hashida Itaru, que tambien resulta ser un amigo de la universidad de Okabe. Junto al resto de "Labmembs", trabajan en proyectos extraños y bizarros a partes iguales.</p>
+            <button type="button" class="btn btn-outline-secondary" style="color: black;">Quiero ser Labmemb</button>
+            <button type="button" class="btn btn-success">Solicitar un tour</button>
+
+          </div>
+
         </div>
 
-        <div class="row">
-            <div class="col-sm-6 order-sm-2">Col One</div>
-            <div class="col-sm-6 order-sm-1">Col Two</div>
+        <!-- cards oradores (titulo) -->
+        <div class="container oradoresTitulo">
+          <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"><p>CONOCE A LOS</p></div>
+            <div class="col-sm-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"><h4>LABMEMBERS FUNDADORES</h4></div>
+            <div class="col-sm-4"></div>
+          </div>
         </div>
 
-        <div class="row">
-            <div class="col-sm-4 offset-2">Col One</div>
-            <div class="col-sm-4 offset-1">Col Two</div>
+        <!-- cards oradores (cards) -->
+
+        <div class="container oradoresCards">
+          <div class="row">
+            <div class="col-sm-4">
+
+              <!-- card individual okabe -->
+              <div class="card" style="width: 18rem;">
+                <img src="okabepfp.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <button type="button" class="btn btn-warning btn-sm" disabled>001</button>
+                  <button type="button" class="btn btn-info btn-sm" disabled>Mad Scientist</button>
+                  <h5 class="card-title">Okabe Rintaro</h5>
+                  <p class="card-text">Primer miembro (y fundador) del laboratorio. Es un autoproclamado "Cientifico Loco" que busca el caos y la destruccion, asi como derrumbar las bases de la sociedad como la conocemos. O al menos, eso es lo que le cuenta a la gente.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-sm-4">
+
+              <!-- card individual mayuri -->
+              <div class="card" style="width: 18rem;">
+                <img src="mayuripfp.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <button type="button" class="btn btn-warning btn-sm" disabled>002</button>
+                  <button type="button" class="btn btn-info btn-sm" disabled>Costume-Maker</button>
+                  <h5 class="card-title">Shiina Mayuri</h5>
+                  <p class="card-text">Es la amiga de la infancia de Okabe. Ella, no esta interesada en los desvarios cientificos de Okabe, pero es miembro del lab porque queria apoyarlo en todo lo que pudiera. Su hobbie es hacer cosplays, y es muy habil en ello.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-sm-4">
+
+              <!-- card individual daru -->
+              <div class="card" style="width: 18rem;">
+                <img src="darupfp.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <button type="button" class="btn btn-warning btn-sm" disabled>003</button>
+                  <button type="button" class="btn btn-info btn-sm" disabled>Supa Hack'a</button>
+                  <h5 class="card-title">Hashida Itaru</h5>
+                  <p class="card-text">Un amigo de la universidad de Okabe, se conocen desde el secundario. Al principio era reacio, pero finalmente cedio y acepto unirse al lab. Sus capacidades informaticas son algo que Okabe siempre intenta usar a su favor.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
 
-        <div class="row my-custom-row justify-content-center align-items-center">
-            <div class="col-sm-4"><div class="p-3 border bg-light">Col One</div></div>
-            <div class="col-sm-4"><div class="p-3 border bg-light">Col Two</div></div>
+        <!-- info sobre akihabara -->
+        
+        <div class="row filaAkiha" id="colsInfoAkihabara">
+          <div class="col-6" id="colAkiha">
+            <img src="akihabara.jpg" alt="" width="100%">
+          </div>
+          <div class="col-6" id="colInfo">
+            <h4>¿Donde esta ubicado el Laboratorio de Artefactos Futuristas?</h4>
+            <h5>En Akihabara, Tokio, Japon.</h5>
+            <p>Akihabara es un barrio ubicado en Tokio, Japón, conocido como el centro de la cultura otaku y la electrónica. Es un lugar vibrante y lleno de vida, donde se pueden encontrar tiendas de electrónica, anime, manga, videojuegos, maquetas, accesorios para cosplay y mucho más. También hay numerosos cafés temáticos, donde los visitantes pueden disfrutar de bebidas y comida rodeados de personajes de anime o de videojuegos. Además, Akihabara es famoso por su animada vida nocturna, con bares y discotecas que atraen tanto a locales como a turistas. En resumen, Akihabara es un lugar que ofrece una experiencia única para los amantes de la cultura japonesa y la tecnología.</p>
+            <button type="button" class="btn btn-outline-secondary" style="color: white;">Conocé mas</button>
+          </div>
         </div>
         
-    </div>
+        
+        <!-- form de postulacion para ser labmemb -->
+        <div class="container formPostulacionTitulo">
+          <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"><p>CONVIERTETE EN UN</p></div>
+            <div class="col-sm-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"><h4>LABMEMBER</h4></div>
+            <div class="col-sm-4"></div>
+          </div>
+        </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-</body>
+        <!-- ACA COMIENZA -->
+        
+        <div class="invitacionPostulacion">
+          <p>¿Quieres ser parte del laboratorio? ¡Postulate y cuentanos sobre ti!</p>
+        </div>
+
+        <!-- ACA TERMINA -->
+
+        <!-- input de nombre y apellido -->
+        <div class="container formNomApe">
+
+          <div class="row nombreApellido">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+              <input type="text" id="nombre" placeholder="Nombre">
+            </div>
+            <div class="col-md-3">
+              <input type="text" id="apellido" placeholder="Apellido">
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+
+        </div>
+        <!-- input de info personal -->
+        <div class="container infoPersonal">
+
+          <div class="row">
+
+            <div class="col text-center" id="colPostulacion">
+              <textarea name="" id="infoPostulacion" cols="50" rows="05" placeholder="Cuentanos un poco sobre ti."></textarea>
+              <div class="epigrafePostulacion">
+                <p>No te olvides de incluir informacion sobre tus pasatiempos y educacion.</p>
+              </div>
+              
+            </div>
+          </div>
+
+        </div>
+
+        <!-- boton para enviar informacion -->
+        <div class="d-grid" id="cajaDeBoton">
+          <button class="btn btn-primary mx-auto" type="button" id="botonPostulacion">enviar</button>
+        </div>
+        
+        
+        
+    </main>
+
+    <footer>
+        <!-- nav de footer (faq, contacto, etc) -->
+        
+        <ul class="nav justify-content-center" id="navDeFooter">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="color: white;">Preguntas<br>frecuentes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link unRenglon" href="#" style="color: white;">Contactanos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link unRenglon" href="#" style="color: white;">Prensa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link unRenglon" style="color: white;">Conferencias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: white;">Terminos y<br>condiciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link unRenglon" href="#" style="color: white;">Privacidad</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link unRenglon" href="#" style="color: white;">Labmembers</a>
+          </li>
+        </ul>
+
+    </footer>
+
+    <!-- Implementacion bootstrap para JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
 </html>

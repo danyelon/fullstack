@@ -1,0 +1,138 @@
+.navPrincipal{
+    background-color: rgb(68, 67, 67);
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icono, .links, .titulo{
+    display: inline-block;
+}
+
+.icono{
+    margin-left: 25px;
+}
+
+.titulo{
+    margin-left: 10px;
+    color: rgb(206, 206, 206);
+}
+  
+.carousel-inner .carousel-item img {
+    /* width: 1360px; */
+    width: 100%;
+    height: auto;
+  }
+  
+
+.carousel-inner .carousel-item {
+    /* width: 1360px; */
+    width: 100%;
+    height: auto;
+}
+
+
+.slide {
+    position: relative;
+}
+
+.informativo{
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    width: 600px;
+    text-align: right;
+    color: black;
+    font-weight: bold;
+}
+
+#tituloInformativo{
+    text-shadow: -1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey, 1px 1px 0 grey;
+}
+
+.oradoresTitulo{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.oradoresCards{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.card-body{
+    text-align: left;
+}
+
+.formPostulacionTitulo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.formNomApe{
+    width: 70%;
+    margin-bottom: 20px;
+    
+}
+
+#nombre, #apellido{
+    width: 100%;
+    /*  */
+}
+
+.infoPersonal{
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+#infoPostulacion{
+    width: 49%;
+}
+
+
+.epigrafePostulacion{
+    text-align: left;
+    width: 70%;
+    margin-left: 26%;
+    font-size: smaller;
+    color: rgb(109, 109, 109);
+    
+}
+
+
+.invitacionPostulacion{
+    text-align: center;
+}
+
+#colsInfoAkihabara{
+    width: 100%;
+    background-color: rgb(70, 91, 119);
+    color: white;
+}
+
+#colInfo{
+    padding-top: 2%;
+}
+
+#botonPostulacion{
+    width: 41%;
+    background-color: rgb(66, 173, 66);
+    border-color: lightgreen;
+}
+
+#cajaDeBoton{
+    margin-bottom: 20px;
+}
+
+#navDeFooter{
+    background: linear-gradient(to right, #14406b, #2478ac);
+    text-align: center;
+}
+
+.unRenglon{
+    margin-top: 10%;
+}
+
